@@ -1,0 +1,158 @@
+/* Default styles */
+* {
+  font-family: Sans-Serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #333333;
+}
+
+.App {
+  max-width: 400px;
+  min-width: unset;
+  padding: 10px;
+}
+
+nav {
+  background-color: #00a9f1;
+  padding: 5px 0;
+  
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+/* Styles for Navbar active link */
+nav ul li.active a {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* Styles for specific sections */
+
+#home,
+#generate,
+#setting {
+  max-width: 400px;
+  min-width: unset;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: 550px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#generate form,
+#setting form {
+  display: flex;
+  flex-direction: column;
+}
+
+#generate label,
+#setting label {
+  display: block;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+#generate input,
+#generate select,
+#generate textarea,
+#setting input {
+  margin: 10px auto;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 50px;
+  min-height: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button,
+#generate .submit,
+#setting .submit {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+#generate .submit:hover,
+#setting .submit:hover {
+  background-color: #0056b3;
+}
+
+#setting p {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.showSelfLife {
+  display: none;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  nav ul {
+    
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  #home,
+  #generate,
+  #setting {
+    max-width: 400px;
+    min-width: unset;
+  }
+}
